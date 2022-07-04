@@ -1,15 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'react-toastify/dist/ReactToastify.css';
-import './styles/styles.scss';
-
-import App from './containers/App';
+import App from './App';
 import * as serviceWorker from './serviceWorker';
 import IntlProviderWrapper from "./hoc/IntlProviderWrapper";
-
-
 import { Provider } from 'react-redux';
 import reduxStore, { persistor } from './redux';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
 
 const renderApp = () => {
     ReactDOM.render(
